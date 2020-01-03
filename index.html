@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/aos.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/Style.css">
+  <link rel="stylesheet" href="assets/css/loader.css">
+  
+  <title>VaynerX</title>
+</head>
+<body>
+  
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+
+  
+  <header class="my-header">
+    <div class="header-container">
+      <h3><a href="#">Vayner</a> <img src="assets/images/kross.png" alt="" width="35px" height="35px"></h3>
+      <ul>
+        <li><a href="#section1">First page</a></li>
+        <li><a href="#section2">Second page</a></li>
+        <li><a href="#">Third page</a></li>
+        <li><a href="#">Fourth page</a></li>
+        <li><a href="#">Fifth page</a></li>
+      </ul>
+    </div>
+  </header>
+  
+  <section class="section1" id="section1">
+    <div class="container">
+      <div class="content" data-aos="fade-down">
+      <img class="logo-img" src="assets/images/kross.png" width="40%" height="40%"/>
+      <p>A modern day communications parent company.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section2" id="section2">
+    <div class="container">
+      <div class="content" data-aos="fade-down">
+      <img class="logo-img" src="assets/images/kross.png" width="40%" height="40%"/>
+      <p>A modern day communications parent company.</p>
+      </div>
+    </div>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+    });
+    
+    $(window).on("load",function(){
+     $(".loader-wrapper").fadeOut("slow");
+});
+
+  </script>
+  
+</body>
+</html>
